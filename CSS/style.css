@@ -227,3 +227,403 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translate(-3px);
 }
+
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 900px;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h1 {
+    color: var(--violet-doux);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details {
+    margin-top: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    color: #25D366; /* Couleur officielle WhatsApp */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+}
+
+/* Page Passions */
+.passions-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.passions-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.passions-intro h1 {
+    color: var(--violet-doux);
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.passion-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.passion-item:hover {
+    transform: translateY(-10px);
+}
+
+.passion-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.passion-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.passion-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.passion-content p {
+    color: var(--gris-tres-fonce);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-passion {
+    text-decoration: none;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-passion:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* --- Styles de la partie MAIN (Projets) --- */
+
+.projects {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects h1 {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Grille des cartes */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+/* Style de la carte individuelle */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid var(--gris-clair);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.15);
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+/* Image du projet */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garde les proportions de vos images */
+}
+
+/* Contenu textuel de la carte */
+.card h3 {
+    margin: 1.5rem 1rem 0.5rem;
+    color: var(--violet-fonce);
+    font-size: 1.4rem;
+}
+
+.card p {
+    padding: 0 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+    flex-grow: 1; /* Aligne les boutons en bas si le texte est court */
+    margin-bottom: 1.5rem;
+}
+
+/* Tags (Technologies) */
+.tags {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: var(--gris-clair);
+    color: var(--violet-fonce);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Liens (Boutons Code/Démo) */
+.links {
+    display: flex;
+    border-top: 1px solid var(--gris-clair);
+}
+
+.links a, .links span {
+    flex: 1;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.links a {
+    color: var(--violet-doux);
+}
+
+.links a:first-child {
+    border-right: 1px solid var(--gris-clair);
+}
+
+.links a:hover {
+    background-color: var(--gris-tres-clair);
+    color: var(--violet-fonce);
+}
+
+.links span {
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+/* Adaptation pour les tablettes/mobiles */
+@media (max-width: 768px) {
+    .projects h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- Page Divertissement --- */
+
+.divertissement-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-divertissement {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header-divertissement h1 {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.div-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.div-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.15);
+}
+
+.div-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.div-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-info {
+    padding: 2rem 1.5rem;
+}
+
+.div-info i {
+    font-size: 2rem;
+    color: var(--violet-doux);
+    margin-bottom: 1rem;
+}
+
+.div-info h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.div-info p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btn-div {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--violet-doux);
+    color: var(--violet-doux);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-div:hover {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .header-divertissement h1 {
+        font-size: 2.2rem;
+    }
+}

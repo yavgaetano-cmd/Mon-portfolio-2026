@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css" integrity="sha512-BrOPA520KmDMqieeM7XFe6a3u3Sb3F1JBaQnrIAmWg3EYrciJ+Qqe6ZcKCdfPv26rGcgTrJnZ/IdQEct8h3Zhw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,13 +21,45 @@
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.html">Divertisement</a></li>
-                <li><a href="contact.html"class ="active ">Contact</a></li>
+                <li><a href="contact.html" class ="active ">Contact</a></li>
             </ul>
         </nav>
      </header>
-   <main>
-    <h1>Mes contacts</h1>
-   </main>
+     <main>
+    <h1>Contactez-moi</h1>
+    <main class="contact-container">
+    <section class="contact-info">
+        <h1>Contactez-moi</h1>
+        <p>Je suis actuellement basé à <strong>Lubumbashi</strong>.</p>
+        <div class="contact-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+243 972 010 078</span>
+            </div>
+            <div class="detail-item">
+                <a href="https://wa.me/243972010078" target="_blank" class="whatsapp-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Discuter sur WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="....." required>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+</main>
      <footer>
         <p>&copy; 2026 Gaetan. Tous droits réservés.</p>
         <p>
